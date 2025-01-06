@@ -542,6 +542,7 @@ public class ObjectNavFragment extends CameraFragment {
   @Override
   protected void setModel(Model model) {
     if (this.model != model) {
+      System.out.println("Model name is::"+model);
       Timber.d("Updating  model: %s", model);
       this.model = model;
       preferencesManager.setObjectNavModel(model.name);
